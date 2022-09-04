@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>DERESİNEK KÖYÜ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css.css" />
+
+</head>
+
+<body>
+
+  
+
+    <header class="header">
+        <nav class="navbar">
+            <a href=" ana sayfa.html" >Ana Sayfa</a>
+            <a href="efsane.html">Gelincik Ana Efsanesi</a>
+            <a href="videolar.html">Videolar</a>
+            <a href="resimler.html">Resimler</a>
+            <a href="vefat.html">Vefat Edenler</a>
+            <a href="kayit.html"class="active">Kayıt</a>
+            <a href="linkler.html">Bağlantılar</a>
+        </nav>
+    </header>
+
+  <form action="kayıt.php" method="get" target="_blank">
+    <fieldset>
+     <p> Aşağıdaki alanları doldurarak, hediye anahtarlıklarımızdan kazanabilirsiniz</p> 
+        <legend > Kişisel Bilgiler </legend>
+        <br>
+      Adı:<input type="text" name="isim"> <br>
+      Soyadı:<input type="text" name="soyisim"> <br>
+      Tel No:<input type="tel" name="tel no" placeholder="05XX XXX XX XX"> <br>
+      Doğum Tarihi: <input type="date" name="doğrum tarihi"> <br>
+      E-Posta Adresi:<input type="email" name="email"> <br>
+      Adresiniz:<input type="text" name="adres"> <br>
+
+      Hobileriniz:<br>
+      <input type="checkbox" name="hobi 1" value="müzik">Müzik <br>
+      <input type="checkbox" name="hobi 2" value="resim">Resim <br>
+      <input type="checkbox" name="hobi 3" value="yürüyüş">Yürüyüş <br>
+      <input type="checkbox" name="hobi 1" value="Kitap okumak">Kitap Okumak <br>
+
+      Cinsiyetiniz:<br>
+      <input type="radio" name="cinsiyet" value="bay">Bay <br>
+      <input type="radio" name="cinsiyet" value="bayan">Bayan <br>
+
+      Öğrenim Durumunuz<br>
+      <select name="Eğitim Durumunuz">
+        <optgroup label="ilkokul">
+          <option value="1">1. sınıf</option>
+          <option value="2">2. sınıf</option>
+          <option value="3">3. sınıf</option>
+          <option value="4">4. sınıf</option>
+        </optgroup>
+
+        <optgroup label="ortaokul">
+          <option value="1">5. sınıf</option>
+          <option value="2">6. sınıf</option>
+          <option value="3">7. sınıf</option>
+          <option value="4">8. sınıf</option>
+        </optgroup>
+
+        <optgroup label="lise">
+          <option value="1">9. sınıf</option>
+          <option value="2">10. sınıf</option>
+          <option value="3">11. sınıf</option>
+          <option value="4">12. sınıf</option>
+        </optgroup>
+
+        <optgroup label="Üniversite">
+          <option value="1">1. sınıf</option>
+          <option value="2">2. sınıf</option>
+          <option value="3">3. sınıf</option>
+          <option value="4">4. sınıf</option>
+          <option value="4">mezun</option>
+        </optgroup>
+      </select> <br>
+
+      Sitemizden tahminen kaç yıldır haberdarsınız<br>
+      <input type="number" name="sayı" min="1" max="5"><br>
+
+      Sitemize göndermek istediğiniz fotoları yükleyebilirsiniz<br>
+      <input type="file" name="resim"><br>
+      Anahtarlığınızda ağırlıklı renk ne olsun?<br>
+      <input type="color" name="anahtarlık rengi"> <br>
+      <br>
+      Yorumlarınızı bizimle paylaşın
+      <br>
+      <textarea rows="3" cols="30" form="yorum"> </textarea>
+<br>
+      <!--gönder düğmesi aşağıdaki gibi olabilir-->
+      <input type="image" src="resim/gönder.png" alt="Gönder" width="55" height="55">
+      <br>Gönder
+  </form>
+  </fieldset>
+
+
+  <footer>
+    <div>Telif hakkı bilgisi &copy; 2016 </div>
+  </footer>
+</body>
